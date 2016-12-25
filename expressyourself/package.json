@@ -1,0 +1,14 @@
+{
+  "name": "repend-expressyourself",
+  "version": "0.0.1",
+  "description": "https://www.youtube.com/watch?v=u31FO_4d9TY",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

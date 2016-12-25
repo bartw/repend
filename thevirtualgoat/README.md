@@ -12,8 +12,11 @@ CMD ["npm", "start"]
 ```
 
 ```yml
-repend:
-  build: . 
+version: '2'
+
+services:
+  repend:
+    build: . 
 ```
 
 ```shell

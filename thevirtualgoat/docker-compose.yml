@@ -1,2 +1,5 @@
-repend:
-  build: . 
+version: '2'
+
+services:
+  repend:
+    build: . 

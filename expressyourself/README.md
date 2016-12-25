@@ -14,10 +14,13 @@ CMD ["npm", "start"]
 ```
 
 ```yml
-repend:
-  build: .
-  ports:
-    - "3000:3000" 
+version: '2'
+
+services:
+  repend:
+    build: .
+    ports:
+      - "3000:3000" 
 ```
 
 ```js

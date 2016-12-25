@@ -1,0 +1,11 @@
+{
+  "name": "repend-hello",
+  "version": "0.0.1",
+  "description": "https://www.youtube.com/watch?v=jK5FOyMhDOY",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT"
+}

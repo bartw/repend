@@ -1,0 +1,11 @@
+{
+  "name": "repend-thevirtualgoat",
+  "version": "0.0.1",
+  "description": "https://www.youtube.com/watch?v=_Te5z6R904M",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT"
+}

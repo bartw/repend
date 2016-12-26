@@ -1,7 +1,19 @@
 version: '2'
 
 services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=repender
+      - POSTGRES_PASSWORD=r3p3nd
+      - POSTGRES_DB=repend
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
   repend:
     build: .
+    depends_on:
+      - db
     ports:
       - "3000:3000" 

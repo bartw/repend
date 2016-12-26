@@ -9,6 +9,7 @@
   "author": "Bart Wijnants",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "pg-promise": "^5.5.0"
   }
 }

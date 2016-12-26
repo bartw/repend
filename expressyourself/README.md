@@ -2,6 +2,12 @@
 
 https://www.youtube.com/watch?v=u31FO_4d9TY
 
+```json
+"dependencies": {
+    "express": "^4.14.0"
+}
+```
+
 ```Dockerfile
 FROM node:latest
 RUN mkdir /app

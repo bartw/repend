@@ -1,0 +1,22 @@
+{
+  "name": "repend-survivaltest",
+  "version": "0.0.1",
+  "description": "https://www.youtube.com/watch?v=7y62rlhaAbU",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L index.js",
+    "test": "mocha",
+    "test:watch": "mocha --watch"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pg-promise": "^5.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}

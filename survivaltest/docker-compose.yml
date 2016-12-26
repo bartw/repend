@@ -22,7 +22,17 @@ services:
       - "3000:3000"
     volumes:
       - ./server:/server
-      - /server/node_modules
+      - node_modules:/server/node_modules
+
+  sut:
+    build: .
+    ports:
+      - "3001:3000"
+    entrypoint: npm run test:watch
+    volumes:
+      - ./server:/server
+      - node_modules:/server/node_modules
 
 volumes:
   pgdata:
+  node_modules:

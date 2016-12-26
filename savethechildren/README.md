@@ -2,12 +2,18 @@
 
 https://www.youtube.com/watch?v=KHirsx8igRk
 
+No app without a database.
+
+Add a dependency to pg-promise in the package.json file.
+
 ```json
 "dependencies": {
     "express": "^4.14.0",
     "pg-promise": "^5.5.0"
 }
 ```
+
+Require the new depency in index.js and use it in our api.
 
 ```js
 (function () {
@@ -38,6 +44,8 @@ https://www.youtube.com/watch?v=KHirsx8igRk
 })();
 ```
 
+Create a init.sql script to initialize the database.
+
 ```sql
 CREATE TABLE IF NOT EXISTS foo
 (
@@ -49,6 +57,8 @@ CREATE UNIQUE INDEX foo_id ON foo (id);
 
 INSERT INTO foo (bar, baz) VALUES ('It''s the ill funk freaker, comin out your speaker', 42);
 ```
+
+Create a new service in the docker-compose.yml that is based of the postgress image. Make th existing service depend on this new service.
 
 ```yml
 version: '2'
@@ -72,18 +82,26 @@ services:
       - "3000:3000" 
 ```
 
+Start the docker containers.
+
 ```shell
 docker-compose up
 ```
 
 Browse to [http://localhost:3000/](http://localhost:3000/)
 
+Make a post to the api endpoint.
+
 ```shell
 curl -X POST http://localhost:3000
 ```
+
+or
 
 ```shell
 Invoke-RestMethod 'http://localhost:3000' -Method Post
 ```
 
 Browse to [http://localhost:3000/](http://localhost:3000/)
+
+A record is added to the database.

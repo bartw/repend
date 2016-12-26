@@ -4,12 +4,15 @@
   "description": "https://www.youtube.com/watch?v=04seFO6BEmw",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon -L index.js"
   },
   "author": "Bart Wijnants",
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
     "pg-promise": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

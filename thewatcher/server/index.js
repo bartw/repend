@@ -13,7 +13,7 @@
     });
 
     app.post('/', function (req, res) {
-        db.query('INSERT INTO foo (bar, baz) VALUES (\'Run and take a leak-ah, stay and yo Eureka\', 666);').then(function (data) {
+        db.query('INSERT INTO foo (bar, baz) VALUES (\'staples\', 666);').then(function (data) {
             res.send('Inserted');
         }).catch(function (error) {
             res.send('Error:' + error);

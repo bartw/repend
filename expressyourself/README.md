@@ -2,11 +2,15 @@
 
 https://www.youtube.com/watch?v=u31FO_4d9TY
 
+Add a dependency to express in package.json.
+
 ```json
 "dependencies": {
     "express": "^4.14.0"
 }
 ```
+
+Adjust the dockerfile to install the dependencies and expose the port.
 
 ```Dockerfile
 FROM node:latest
@@ -19,6 +23,8 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
+Map the port in the docker-compose.yml file.
+
 ```yml
 version: '2'
 
@@ -28,6 +34,8 @@ services:
     ports:
       - "3000:3000" 
 ```
+
+Create a simple express api in the index.js file.
 
 ```js
 (function () {
@@ -43,6 +51,8 @@ services:
     });
 })();
 ```
+
+Now start the docker container and browse to the api.
 
 ```shell
 docker-compose up

@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=PYVeIjkC_QA
 
+Change to docker-compose.yml file to create a volume for the database data.
+
 ```yml
 version: '2'
 
@@ -33,12 +35,16 @@ volumes:
   pgdata:
 ```
 
+The database data is now saved in a separate volume and won't be deleted even if we delete the container.
+
 ```shell
 docker-compose up
 ```
+
+Use the following command to see the volume.
 
 ```shell
 docker volume ls
 ```
 
-See "local nevaforget_pgdata".
+There is a volume called "local nevaforget_pgdata".

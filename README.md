@@ -34,8 +34,6 @@ https://www.youtube.com/watch?v=PYVeIjkC_QA
 
 https://www.youtube.com/watch?v=7y62rlhaAbU
 
-TODO
-
 ## [Product Of The Environment](productoftheenvironment)
 
 https://www.youtube.com/watch?v=KRKDgzlfUBY
